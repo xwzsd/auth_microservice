@@ -9,6 +9,7 @@ namespace :db do
       version = args.version.to_i if args.version
 
       Sequel::Migrator.run(db, migrations, target: version)
+      Rake::Task['db:schema'].execute
     end
   end
 end

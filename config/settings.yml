@@ -6,3 +6,5 @@ pagination:
   page_size: 10
 app:
   secret: secret
+  schema_file_name: 'schema.rb'
+  schema_path: <%= File.expand_path("../db", __FILE__) %>
