@@ -8,3 +8,5 @@ app:
   secret: secret
   schema_file_name: 'schema.rb'
   schema_path: <%= File.expand_path("../db", __FILE__) %>
+rabbitmq:
+  consumer_pool: 10
