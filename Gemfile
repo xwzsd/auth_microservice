@@ -23,6 +23,8 @@ gem 'activesupport', '~> 6.0.0', require: false
 gem 'fast_jsonapi', '~> 1.5'
 gem 'sequel-seed', '~> 1.1.2'
 gem 'bunny'
+gem 'rack-ougai', '~> 0.2.1'
+gem 'rack-request-id', '~> 0.0.4'
 
 group :test do
   gem 'rspec', '~> 3.9.0'
