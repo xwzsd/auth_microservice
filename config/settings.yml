@@ -5,8 +5,12 @@ db:
 pagination:
   page_size: 10
 app:
+  name: auth
   secret: secret
   schema_file_name: 'schema.rb'
   schema_path: <%= File.expand_path("../db", __FILE__) %>
 rabbitmq:
   consumer_pool: 10
+logger:
+  path: log/app.log
+  level: info
